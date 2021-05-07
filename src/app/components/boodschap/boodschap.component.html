@@ -1,0 +1,4 @@
+<h1>reclameboodschap</h1>
+<div [hidden]="hidden" *ngFor="let message of messages; let i = index" [class]="colours[i]">{{ message }}</div>
+<button type="button" (click)="updateColours()">Andere kleuren</button>
+<button type="button" (click)="toggleMessages()">Toggle messages</button>
